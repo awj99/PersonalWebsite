@@ -1,21 +1,29 @@
-import { Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 
 function AboutMe() {
   return (
-    <Stack flexDirection='row' width='100%' justifyContent='flex-start' alignContent="flex-start" border={1}>
-      <Stack flexDirection='column' alignContent='flex-start' border={1} flex={0.5}>
-      </Stack>
-      <Stack flexDirection='column' alignContent='center' justifyContent='center' border={1} flex={0.5} >
-        <Typography variant='h2' align='center'>
-          About Me
+    <Grid container>
+      <Grid item xs={12} sm={12} md={6}>
+        <Typography variant='h2' align='center' gutterBottom>
+            About Me
         </Typography>
-        <Typography variant='p' align='center'>
-          I am a aspiring front-end developer.
+        <Typography variant='p' align='center' gutterBottom>
+            Reprehenderit Lorem ipsum proident pariatur. Quis in aute exercitation sunt aliqua veniam anim aliqua. Laborum qui duis reprehenderit deserunt aliquip cupidatat aliquip. In qui cupidatat sint irure duis consectetur id.
         </Typography>
-      </Stack>
-    </Stack>
+      </Grid>
+      <Grid item xs={12} sm={12} md={6}>
+        <Stack flexDirection='column' alignContent='center' justifyContent='center' border={1} flex={0.5} >
+          <Typography variant='p' align='center' gutterBottom>
+            I am a aspiring front-end developer.
+          </Typography>
+          <Typography variant='p' align='center' gutterBottom>
+            Reprehenderit Lorem ipsum proident pariatur. Quis in aute exercitation sunt aliqua veniam anim aliqua. Laborum qui duis reprehenderit deserunt aliquip cupidatat aliquip. In qui cupidatat sint irure duis consectetur id.
+          </Typography>
+        </Stack>
+      </Grid>
+    </Grid>
   )
 }
 
